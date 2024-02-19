@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="hidden">
             <div class="navbar bg-base-100 flex-1 justify-around">
                 <a class="btn btn-ghost text-3xl font-extrabold">P-Ticket</a>
                 <ul class="menu menu-horizontal px-1 gap-6">
@@ -23,7 +23,7 @@
                 <a class="btn text-orange-500">Bus<img src="images/bus-icon.png" alt=""></a>
             </div>
         </nav>
-        <div>
+        <div class="hidden">
             <div class="hero min-h-screen p-16" style="background-image: url(images/banner.png)">
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
@@ -42,22 +42,76 @@
             <p class="">Yes, you can run unit tests and view the results directly within the app. The integrated
                 testing features allow for a streamlined .</p>
         </div>
-        <div class="flex gap-x-20">
-            <div class="flex gap-5">
-                <img src="images/bus-logo.png" alt="">
+        <div class="flex gap-x-80 justify-center text-center hidden ">
+            <div class="main div">
+                <div class="flex gap-x-96">
+                    <div class="flex">
+                        <img src="images/bus-logo.png" alt="">
+                        <div>
+                            <p>Greenline</p>
+                            <p>Coach</p>
+                        </div>
+                    </div>
+                    <div class="gap-x-2">
+                        <img src="images/seat-green.png" alt="">
+                        <p class="text-center"><span>40</span> Seats Left</p>
+                    </div>
+                </div>
                 <div>
-                    <h2 class="text-2xl">SR Paribahan</h2>
-                    <p>Coach-009-WEB ! AC_Business</p>
+                    <div class="">
+                        <div class="flex mt-10 gap-72">
+                            <input placeholder="Route" type="text">
+                            <p>Dhaka - Sylhet</p>
+                        </div>
+                        <div class="flex gap-72">
+                            <input placeholder="Departure Time" type="text">
+                            <p>9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-72 pt-3">
+                        <p>Boarding Point - Laxmipur</p>
+                        <p>Dropping Point - Bogura</p>
+                        <p>Est. Time - 11 Hour</p>
+                    </div>
                 </div>
             </div>
-            <div class="flex">
-                <img src="images/seat-green.png" alt="">
-                <div>
-                    <p>
-                        <span>40</span>Seats left
-                    </p>
-                </div>
+            <div>
+                <img src="images/fare.png" alt="">
+                <p class="text-3xl font-bold">550 tk</p>
+                <p class="text-lg">Per Seat</p>
             </div>
+        </div>
+
+
+        <div class="grid grid-cols-4 gap-x-5">
+            <table class="">
+                <tbody class="justify-center">
+                  <tr class="">
+                    <td class=" bg-slate-500">A1</td>
+                    <td class=" bg-slate-500">A2</td>
+                    <td class=" bg-slate-500">A3</td>
+                    <td class=" bg-slate-500">A4</td>
+                  </tr>
+                  <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                    <td>B4</td>
+                  </tr>
+                  <tr>
+                    <td>C1</td>
+                    <td>C2</td>
+                    <td>C3</td>
+                    <td>C4</td>
+                  </tr>
+                  <tr>
+                    <td>D1</td>
+                    <td>D2</td>
+                    <td>D3</td>
+                    <td>D4</td>
+                  </tr>
+                </tbody>
+            </table>
         </div>
 
     </main>
